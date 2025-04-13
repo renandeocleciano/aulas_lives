@@ -1,0 +1,20 @@
+services:
+  api:
+    build: .
+    depends_on:
+      - rabbitmq
+    ports:
+      - "3000:3000"
+    command: node dist/server.js
+
+  consumer:
+    build: .
+    depends_on:
+      - rabbitmq
+    command: node dist/consumer.js
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"

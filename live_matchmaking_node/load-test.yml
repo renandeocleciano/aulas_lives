@@ -1,0 +1,18 @@
+# load-test.yml
+# Teste de carga de 1 minuto, enviando várias requisições para /match
+#artillery run load-test.yml
+#artillery run load-test.yml --output result.json
+#artillery report --output report.html result.json
+
+config:
+  target: "http://localhost:3001"
+  phases:
+    - duration: 20   # duração do teste em segundos
+      arrivalRate: 10  # 10 requisições por segundo
+
+scenarios:
+  - flow:
+      - post:
+          url: "/match"
+          json:
+            skill: "{{ $randomInt(1,100) }}"

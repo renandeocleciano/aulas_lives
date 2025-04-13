@@ -1,0 +1,14 @@
+# Esse arquivo sobe um container com RabbitMQ
+# A interface de administração estará disponível em http://localhost:15672
+# Usuário: guest | Senha: guest
+version: '3.8'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"   # Porta usada pela aplicação para se comunicar com o RabbitMQ
+      - "15672:15672" # Porta da interface web de gerenciamento do RabbitMQ
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest

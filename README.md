@@ -19,6 +19,21 @@ Aqui você encontrará conteúdos organizados por temas, com foco em clareza, pr
 - Exemplos práticos em TypeScript
 - Explicações pensadas para iniciantes e profissionais em evolução
 
+### 🟨 [API de Matchmaking com Node.js, TypeScript e RabbitMQ](./live_matchmaking_node/README.md)
+
+- Projeto construído ao vivo em 05/03/2025
+- Processamento assíncrono com RabbitMQ
+- Sistema de matchmaking com lógica de skill
+- Docker e Docker Compose para ambiente local
+- Didático, modular e pronto para expansão
+
+### 🟨 [API de Extração de Dados em Pdf com GEMINI em Node.js, TypeScript e RabbitMQ](./live_api_gemini/README.md)
+
+- Projeto construído ao vivo em 05/04/2025
+- Envio de arquivos no formato pdf 
+- Utilização do Multer para requisições multipart
+- Criação de Prompt e Extração de dados utilizando o GEMINI
+
 ---
 
 ## 📌 Sobre este repositório
@@ -33,7 +48,7 @@ Se você está acompanhando as aulas, **fique de olho neste espaço** para revis
 
 Criado por **Renan Deocleciano**  
 🔗 Instagram: [@_renant](https://www.instagram.com/_renant)  
-🔗 Tiktok: [@_renant](https://www.tiktok.com/@codebyrenan)  
+🔗 Tiktok: [@codebyrenan](https://www.tiktok.com/@codebyrenan)  
 🎓 Curso: [onovoprogramador.com.br](https://onovoprogramador.com.br) — Cupom: **Renan10**
 
 ---
