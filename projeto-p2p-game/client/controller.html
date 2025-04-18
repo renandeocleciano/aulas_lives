@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Controller</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div id="app">
+    <h1>Controller</h1>
+    <div id="status">Aguardando leitura do QR Code...</div>
+
+    <div id="reader" style="width: 300px; margin-top: 20px;"></div>
+
+    <select id="cameraSelect" style="display: none; margin-top: 15px;">
+      <option value="environment">Traseira</option>
+      <option value="user">Frontal</option>
+    </select>
+    <button id="start" style="display: none;">Iniciar Câmera e Gestos</button>
+
+    <video
+      id="video"
+      autoplay
+      muted
+      playsinline
+      width="300"
+      height="200"
+      style="margin-top: 20px; display: none; border-radius: 12px;"
+    ></video>
+
+    <pre id="log" style="margin-top: 20px;"></pre>
+  </div>
+
+  <script type="module" src="/src/controller.ts"></script>
+</body>
+</html>

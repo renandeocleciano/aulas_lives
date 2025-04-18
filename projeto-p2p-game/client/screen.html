@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tela do Host</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div id="app">
+    <h1>Painel do Host</h1>
+    <p>Escaneie para se conectar:</p>
+    <canvas id="qrcode"></canvas>
+
+    <div id="ranking" class="section">
+      <h2>🏆 Ranking de Gestos</h2>
+      <ul id="ranking-list"></ul>
+    </div>
+
+    <div id="connections" class="section">
+      <h2>👥 Conexões Ativas</h2>
+      <ul id="users-list"></ul>
+    </div>
+
+    <div id="log" class="section">
+      <h2>🕓 Histórico</h2>
+      <ul id="log-list"></ul>
+    </div>
+  </div>
+
+  <script type="module" src="/src/screen.ts"></script>
+</body>
+</html>
